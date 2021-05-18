@@ -24,8 +24,8 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _ReadVenta_QNAME = new QName("http://dao.ws.soap.upeu.edu.pe/", "readVenta");
-    private final static QName _ReadVentaResponse_QNAME = new QName("http://dao.ws.soap.upeu.edu.pe/", "readVentaResponse");
+    private final static QName _ReadClienteResponse_QNAME = new QName("http://dao.ws.soap.upeu.edu.pe/", "readClienteResponse");
+    private final static QName _ReadCliente_QNAME = new QName("http://dao.ws.soap.upeu.edu.pe/", "readCliente");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: pe.edu.upeu.soap.ws.dao
@@ -35,45 +35,45 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ReadVenta }
+     * Create an instance of {@link ReadClienteResponse }
      * 
      */
-    public ReadVenta createReadVenta() {
-        return new ReadVenta();
+    public ReadClienteResponse createReadClienteResponse() {
+        return new ReadClienteResponse();
     }
 
     /**
-     * Create an instance of {@link ReadVentaResponse }
+     * Create an instance of {@link ReadCliente }
      * 
      */
-    public ReadVentaResponse createReadVentaResponse() {
-        return new ReadVentaResponse();
+    public ReadCliente createReadCliente() {
+        return new ReadCliente();
     }
 
     /**
-     * Create an instance of {@link Ventas }
+     * Create an instance of {@link Cliente }
      * 
      */
-    public Ventas createVentas() {
-        return new Ventas();
+    public Cliente createCliente() {
+        return new Cliente();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadVenta }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadClienteResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://dao.ws.soap.upeu.edu.pe/", name = "readVenta")
-    public JAXBElement<ReadVenta> createReadVenta(ReadVenta value) {
-        return new JAXBElement<ReadVenta>(_ReadVenta_QNAME, ReadVenta.class, null, value);
+    @XmlElementDecl(namespace = "http://dao.ws.soap.upeu.edu.pe/", name = "readClienteResponse")
+    public JAXBElement<ReadClienteResponse> createReadClienteResponse(ReadClienteResponse value) {
+        return new JAXBElement<ReadClienteResponse>(_ReadClienteResponse_QNAME, ReadClienteResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReadVentaResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReadCliente }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://dao.ws.soap.upeu.edu.pe/", name = "readVentaResponse")
-    public JAXBElement<ReadVentaResponse> createReadVentaResponse(ReadVentaResponse value) {
-        return new JAXBElement<ReadVentaResponse>(_ReadVentaResponse_QNAME, ReadVentaResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://dao.ws.soap.upeu.edu.pe/", name = "readCliente")
+    public JAXBElement<ReadCliente> createReadCliente(ReadCliente value) {
+        return new JAXBElement<ReadCliente>(_ReadCliente_QNAME, ReadCliente.class, null, value);
     }
 
 }
